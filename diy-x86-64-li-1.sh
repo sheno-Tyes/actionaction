@@ -17,7 +17,6 @@
 #popd
 echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> feeds.conf.default
 echo "src-git small https://github.com/kenzok8/small" >> feeds.conf.default
-./scripts/feeds clean
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 mkdir package/community
