@@ -15,7 +15,7 @@
 #pushd package
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
-
+rm -rf ./feeds/luci/applications/luci-app-dockerman
 
 mkdir package/community
 pushd package/community
