@@ -8,8 +8,6 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
-echo 'src-git dockerman https://github.com/lisaac/luci-app-dockerman' >> feeds.conf.default
 sed -i "/other/d" feeds.conf.default
 echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> feeds.conf.default
 echo "src-git small https://github.com/kenzok8/small" >> feeds.conf.default
-./scripts/feeds clean
