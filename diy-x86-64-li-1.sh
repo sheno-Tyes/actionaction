@@ -15,7 +15,8 @@
 #pushd package
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
-
+rm -rf ./feeds/luci/applications/luci-app-dockerman
+rm -rf ./feeds/other/luci-app-dockerman
 mkdir package/community
 pushd package/community
 
@@ -33,6 +34,8 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
-
+#add docker
+git clone https://github.com/lisaac/luci-lib-docker
+git clone https://github.com/lisaac/luci-app-dockerman
 
 popd
