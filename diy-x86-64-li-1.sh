@@ -20,6 +20,9 @@ rm -rf ./feeds/other/luci-app-dockerman
 mkdir package/community
 pushd package/community
 svn co https://github.com/immortalwrt/packages/trunk/net/redsocks2
+
+rm -rf feeds/packages/libs/libcap
+svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
