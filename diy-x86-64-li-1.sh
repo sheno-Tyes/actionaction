@@ -15,6 +15,8 @@
 #pushd package
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
+rm -rf ./feeds/other/luci-lib-docker
+rm -rf ./package/feeds/other/luci-lib-docker
 rm -rf ./feeds/luci/applications/luci-app-dockerman
 rm -rf ./feeds/other/luci-app-dockerman
 rm -rf feeds/packages/libs/libcap
