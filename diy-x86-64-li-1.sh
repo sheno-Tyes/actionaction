@@ -41,5 +41,7 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 #add docker
 git clone https://github.com/lisaac/luci-lib-docker
 git clone https://github.com/lisaac/luci-app-dockerman
-
+# Add smartdns
+svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
+svn co https://github.com/pymumu/luci-app-smartdns/trunk ../luci-app-smartdns
 popd
