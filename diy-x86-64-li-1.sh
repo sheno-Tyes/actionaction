@@ -15,10 +15,10 @@
 #pushd package
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
-rm -rf ./feeds/other/luci-lib-docker
-rm -rf ./package/feeds/other/luci-lib-docker
-rm -rf ./feeds/luci/applications/luci-app-dockerman
-rm -rf ./feeds/other/luci-app-dockerman
+#rm -rf ./feeds/other/luci-lib-docker
+#rm -rf ./package/feeds/other/luci-lib-docker
+#rm -rf ./feeds/luci/applications/luci-app-dockerman
+#rm -rf ./feeds/other/luci-app-dockerman
 rm -rf feeds/packages/libs/libcap
 mkdir package/community
 pushd package/community
@@ -41,8 +41,8 @@ git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
 #add docker
-git clone https://github.com/lisaac/luci-lib-docker
-git clone https://github.com/lisaac/luci-app-dockerman
+#git clone https://github.com/lisaac/luci-lib-docker
+#git clone https://github.com/lisaac/luci-app-dockerman
 # Add smartdns
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
 svn co https://github.com/pymumu/luci-app-smartdns/trunk ../luci-app-smartdns
