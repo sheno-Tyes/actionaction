@@ -53,8 +53,8 @@ git clone https://github.com/lisaac/luci-app-dockerman
 # add diskman
 git clone https://github.com/lisaac/luci-app-diskman
 # Add smartdns
-svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
-svn co https://github.com/pymumu/luci-app-smartdns/trunk ../luci-app-smartdns
+#svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
+#svn co https://github.com/pymumu/luci-app-smartdns/trunk ../luci-app-smartdns
 #add argon theme
 git clone https://github.com/jerrykuku/luci-theme-argon.git
 popd
