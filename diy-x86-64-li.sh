@@ -15,23 +15,46 @@
 #pushd package
 #git clone --depth=1 https://github.com/fw876/helloworld
 #popd
-echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> feeds.conf.default
-echo "src-git small https://github.com/kenzok8/small" >> feeds.conf.default
-./scripts/feeds update -a
-./scripts/feeds install -a
+rm -rf ./feeds/other/luci-lib-docker
+rm -rf ./package/feeds/other/luci-lib-docker
+rm -rf ./feeds/luci/applications/luci-app-dockerman
+rm -rf ./feeds/other/luci-app-dockerman
+##
+rm -rf ./package/feeds/other/luci-app-adguardhome
+rm -rf ./feeds/other/luci-app-adguardhome
+##
+rm -rf ./package/feeds/other/luci-app-diskman
+rm -rf ./feeds/other/luci-app-diskman
+rm -rf feeds/packages/libs/libcap
 mkdir package/community
 pushd package/community
-# Add Lienol's Packages
-git clone --depth=1 https://github.com/Lienol/openwrt-package
+svn co https://github.com/immortalwrt/packages/trunk/net/redsocks2
+
+
+svn co https://github.com/openwrt/openwrt/trunk/package/libs/libcap
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
 git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+# Add luci-app-bypass
+git clone --depth=1 https://github.com/kiddin9/openwrt-bypass
+
+# Add OpenClash
+git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 
 # Add luci-app-vssr <M>
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
-
-
-
+## add adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome
+#add docker
+git clone https://github.com/lisaac/luci-lib-docker
+git clone https://github.com/lisaac/luci-app-dockerman
+# add diskman
+git clone https://github.com/lisaac/luci-app-diskman
+# Add smartdns
+svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
+svn co https://github.com/pymumu/luci-app-smartdns/trunk ../luci-app-smartdns
+#add argon theme
+git clone https://github.com/jerrykuku/luci-theme-argon.git
 popd
