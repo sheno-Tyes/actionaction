@@ -18,8 +18,10 @@
 rm -rf ./feeds/other/luci-lib-docker
 rm -rf ./package/feeds/other/luci-lib-docker
 rm -rf ./feeds/luci/collections/luci-lib-docker
+rm -rf ./package/feeds/luci/luci-lib-docker
 rm -rf ./feeds/luci/applications/luci-app-dockerman
 rm -rf ./feeds/other/luci-app-dockerman
+rm -rf ./package/feeds/luci/luci-app-dockerman
 ##
 rm -rf ./package/feeds/other/luci-app-adguardhome
 rm -rf ./feeds/other/luci-app-adguardhome
