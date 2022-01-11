@@ -41,7 +41,8 @@ git clone --depth=1 https://github.com/kiddin9/openwrt-bypass
 
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
-
+# luci-app-ssr-plus
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 # Add luci-app-vssr <M>
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
