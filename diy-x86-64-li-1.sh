@@ -22,6 +22,9 @@ rm -rf ./feeds/other/luci-app-dockerman
 ##
 rm -rf ./package/feeds/other/luci-app-adguardhome
 rm -rf ./feeds/other/luci-app-adguardhome
+##
+rm -rf ./package/feeds/other/luci-app-diskman
+rm -rf ./feeds/other/luci-app-diskman
 rm -rf feeds/packages/libs/libcap
 mkdir package/community
 pushd package/community
@@ -47,6 +50,8 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome
 #add docker
 git clone https://github.com/lisaac/luci-lib-docker
 git clone https://github.com/lisaac/luci-app-dockerman
+# add diskman
+git clone https://github.com/lisaac/luci-app-diskman
 # Add smartdns
 svn co https://github.com/pymumu/smartdns/trunk/package/openwrt ../smartdns
 svn co https://github.com/pymumu/luci-app-smartdns/trunk ../luci-app-smartdns
